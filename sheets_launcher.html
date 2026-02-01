@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Google Sheets Launcher</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            text-align: center;
+            padding: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        button {
+            width: 95%;
+            max-width: 400px;
+            padding: 15px;
+            margin: 10px auto;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            background: #1a73e8;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #1558b0;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>ICT Data</h2>
+
+    <button onclick="openSheet('https://docs.google.com/spreadsheets/d/1eE-LwlcBWa5hNl4vviYWNSDkE3w-KIafOEYFfuLhjVI/edit?usp=drivesdk')">
+        OL
+    </button>
+
+    <button onclick="openSheet('https://docs.google.com/spreadsheets/d/1UVlXree8lXNYU0v9ht6tLJP1KmnwaE0D/edit?usp=drivesdk&ouid=100993570456295205679&rtpof=true&sd=true')">
+        AL
+    </button>
+
+    <button onclick="openSheet('https://docs.google.com/spreadsheets/d/3UvWxYz1234xxxxxxx')">
+        Projects
+    </button>
+
+    <script>
+        function openSheet(url) {
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
